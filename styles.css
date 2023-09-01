@@ -17,6 +17,7 @@ font-weight: 700;
 line-height: 140%; /* 18.2px */
 letter-spacing: 0.26px;
 text-transform: uppercase;
+
 }
 
 .contenedor {
@@ -26,7 +27,7 @@ text-transform: uppercase;
   }
   
   .contenedor > div {
-    width: 50%;
+    width: 22%;
   }
   .seccion1{
     padding-left: 20%;
@@ -36,7 +37,7 @@ text-transform: uppercase;
 
   }
   .seccion2{
-    padding-top: 5%;
+    padding-top: 6%;
     padding-left: 20%;
     height: 131px;
     top: 63px;
@@ -53,23 +54,46 @@ line-height: 140%;
   }
   .rectangulo{
     
+    margin-right: 10%;
   border-radius: 100px;
     width: 70px;
     height: 24px;
     background-color: var(--primary-palette-brand-2-pale, #FFDCD3);;
-    z-index: 0;
-   
     display: inline-block;
   }
+  .rectanguloAzul {
+    margin-right: 10%;
+    border-radius: 100px;
+    width: 70px;
+    height: 24px;
+    background-color: #D1F1FF80;
+    position: absolute;
+    top: 13%;
+    z-index: 0;
+}
   .subSeccion{ 
     display: flex;
     flex-direction: row;
-    z-index: 1;
+
 
   }
-  .subSeccion svg{
-    posi
-  }
-  .subSeccion div{
-   
-  }
+ 
+  .arrowleft {
+    position: absolute;
+    padding-top: 0px;
+    padding-right: 0px;
+    left: 60.5%;
+    top: 12%;
+    z-index: auto;
+}
+.arrow svg circle{
+  cursor: pointer;
+}
+.arrow { 
+  position: absolute;
+  padding-top: 0px;
+  padding-right: 0px;
+  right: 25%;
+  top: 12%;
+  z-index: auto;
+}
