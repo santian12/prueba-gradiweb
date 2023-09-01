@@ -104,7 +104,7 @@ line-height: 140%;
   justify-content: center;
   align-items: flex-start;
 }
-.Btn{
+.Btn{ cursor: pointer;
   justify-content: center;
   color: var(--White, #FFF);
 text-align: center;
@@ -121,4 +121,29 @@ border-radius: 100px;
 border: 1px solid var(--primary-palette-brand-2, #EFA693);
 opacity: 0.9;
 background: var(--primary-palette-brand-2, #EFA693)
+}
+.footer{
+  justify-content: center;
+  width: 1440px;
+height: 1009px;
+background-image: url();
+}
+.footer h3{
+  color: var(--Body---Titles, #444950);
+text-align: center;
+/* Desktop/H2-Desktop */
+font-family: Abhaya Libre;
+font-size: 44px;
+font-style: normal;
+font-weight: 700;
+line-height: 140%; /* 61.6px */
+}
+.footer p{
+  color: var(--Gray---Paragraph, #939393);
+text-align: center;
+font-family: Filson Pro;
+font-size: 15px;
+font-style: normal;
+font-weight: 350;
+line-height: 180%; /* 27px */
 }
