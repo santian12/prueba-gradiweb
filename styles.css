@@ -1,13 +1,14 @@
 .header{
     
-    width: 100%;
-
-    height: 50px;
+  background-size: 100% 100%;
+  width: 100%;
+  height: 32px;
+  flex-shrink: 0;
     background-color: var(--primary-palette-brand-2-pale, #FFDCD3);;
 
 }
 .header h1{
-
+  padding-top: 7px;
     color: var(--Body---Titles, #444950);
     text-align: center; 
     font-family: Abhaya Libre;
@@ -108,7 +109,7 @@ line-height: 140%;
   justify-content: center;
   color: var(--White, #FFF);
 text-align: center;
-font-family: Neogrotesk Ess;
+
 font-size: 14px;
 font-style: normal;
 font-weight: 700;
@@ -122,11 +123,14 @@ border: 1px solid var(--primary-palette-brand-2, #EFA693);
 opacity: 0.9;
 background: var(--primary-palette-brand-2, #EFA693)
 }
+footer{
+  align-items: center;
+height: 550px;
+  background-image: url(https://i.ibb.co/KGjzLhc/Union.png);
+  background-size: 100% 100%;
+}
 .footer{
-  justify-content: center;
-  width: 1440px;
-height: 1009px;
-background-image: url();
+  padding-top: 4%;
 }
 .footer h3{
   color: var(--Body---Titles, #444950);
@@ -137,6 +141,7 @@ font-size: 44px;
 font-style: normal;
 font-weight: 700;
 line-height: 140%; /* 61.6px */
+
 }
 .footer p{
   color: var(--Gray---Paragraph, #939393);
@@ -146,4 +151,29 @@ font-size: 15px;
 font-style: normal;
 font-weight: 350;
 line-height: 180%; /* 27px */
+
+}
+.messsage{
+  justify-content: center;
+  display: flex;
+}
+.email{
+  width: 360px;
+height: 48px;
+flex-shrink: 0;
+border-radius: 100px;
+border: 1px solid var(--primary-palette-brand-2, #EFA693);
+background: var(--White, #FFF);
+}
+.btnfooter{
+  color: #FFF;
+  cursor: pointer;
+  display: initial;
+padding: 12px 40px;
+align-items: center;
+gap: 8px;
+border-radius: 100px;
+border: 1px solid var(--primary-palette-brand-2, #EFA693);
+opacity: 0.9;
+background: var(--primary-palette-brand-2, #EFA693);
 }
