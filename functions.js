@@ -12,6 +12,40 @@ document.addEventListener("DOMContentLoaded", function() {
           if (Array.isArray(data.products.nodes) && data.products.nodes.length > 0) {
             const products = data.products.nodes;
             const productHTML = products.map((product) => {
+//sistema de estrellas
+const numericTags = [];
+
+    if (Array.isArray(product.tags)) {
+        product.tags.forEach(tag => {
+            if (!isNaN(tag)) {
+                numericTags.push(parseInt(tag));
+            }
+        });
+    }
+
+
+const averageTag = numericTags.length > 0 ? numericTags.reduce((acc, tag) => acc + tag, 0) / numericTags.length : 0;
+console.log(averageTag)
+function getStarRating(average) {
+  switch (true) {
+    case (average >= 0 && average < 100):
+      return "★"; // 1 Estrella
+    case (average >= 100 && average < 200):
+      return "★★"; // 2 Estrellas
+    case (average >= 200 && average < 300):
+      return "★★★"; // 3 Estrellas
+    case (average >= 300 && average < 400):
+      return "★★★★"; // 4 Estrellas
+    case (average >= 400 && average <= 500):
+      return "★★★★★"; // 5 Estrellas
+    default:
+      return "No Rating"; 
+  }
+}
+
+// Renderiza el promedio y el número de estrellas
+const starRating = getStarRating(averageTag);
+//fin del sistema
               return `
               <div class="product-card">
               <div class="product-image">
@@ -21,7 +55,7 @@ document.addEventListener("DOMContentLoaded", function() {
               </div>
               <div class="product-info">
                   <h2 class="product-brand">${product.title}</h2>
-                  <p class="product-short-description">${product.tags}</p>
+                  <span class="stars">${starRating}</span><span class="">(${averageTag})</span>
                   <span class="price">${product.prices.max.amount} ${product.prices.max.currencyCode}</span><span class="actual-price"></span>
 
               </div>

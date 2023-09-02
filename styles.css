@@ -193,8 +193,8 @@ background: var(--primary-palette-brand-2, #EFA693);
 }
 
 .product-container {
-  padding: 0 10vw;
   display: flex;
+  padding: 0 10vw;
   scroll-behavior: smooth;
 }
 
@@ -284,9 +284,10 @@ product-card:hover .card-btn {
 }
 
 .actual-price {
+  font-size: 28px;
   margin-left: 20px;
   opacity: 0.5;
-  text-decoration: line-through;
+  color: #e59a08;
 }
 
 .pre-btn,
@@ -354,6 +355,11 @@ product-card:hover .card-btn {
   grid-column: span 2;
   margin-bottom: 10px;
 }
-
+.stars {
+  font-size: 28px;
+  margin-left: 20px;
+  opacity: 0.5;
+  color: #FFC658;
+}
 
 
