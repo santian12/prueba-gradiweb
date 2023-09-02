@@ -46,16 +46,24 @@ function getStarRating(average) {
 // Renderiza el promedio y el número de estrellas
 const starRating = getStarRating(averageTag);
 //fin del sistema
+
+const sale = ( `${product.prices.max.amount}` - `${product.prices.min.amount}`) * 100;
+const onsale= (sale/`${product.prices.max.amount}`)*100;
+let discountTag = '';
+if (onsale > 0) {
+  discountTag = `<span class="discount-tag">${onsale}% off</span>`;
+}
+
               return `
               <div class="product-card">
               <div class="product-image">
-                  <span class="discount-tag">50% off</span>
+                ${discountTag}
                   <img src="${product.featuredImage.url}" class="product-thumb" alt="">
                   <button class="card-btn">add to wishlist</button>
               </div>
               <div class="product-info">
                   <h2 class="product-brand">${product.title}</h2>
-                  <span class="stars">${starRating}</span><span class="">(${averageTag})</span>
+                  <span class="stars">${starRating}</span><span class="tags">(${averageTag})</span>
                   <span class="price">${product.prices.max.amount} ${product.prices.max.currencyCode}</span><span class="actual-price"></span>
 
               </div>
@@ -78,34 +86,22 @@ const starRating = getStarRating(averageTag);
   
   // Styles slider
  // Inicializa el carrusel 
-
- document.addEventListener("DOMContentLoaded", function () {
-    const productContainers = document.querySelectorAll(".product-container");
-    const nxtBtns = document.querySelectorAll(".nxt-btn");
-    const preBtns = document.querySelectorAll(".pre-btn");
-  
-    function handleScroll(container, scrollAmount) {
-      container.scrollLeft += scrollAmount;
-    }
-  
-    nxtBtns.forEach((nxtBtn) => {
-      nxtBtn.addEventListener("click", () => {
-        const container = nxtBtn.closest(".product-container");
-        if (container) {
-          handleScroll(container, container.offsetWidth);
-        }
-      });
-    });
-  
-    preBtns.forEach((preBtn) => {
-      preBtn.addEventListener("click", () => {
-        const container = preBtn.closest(".product-container");
-        if (container) {
-          handleScroll(container, -container.offsetWidth);
-        }
-      });
-    });
-  });
+ const productContainers = [...document.querySelectorAll('.product-container')];
+ const nxtBtn = [...document.querySelectorAll('.nxt-btn')];
+ const preBtn = [...document.querySelectorAll('.pre-btn')];
+ 
+ productContainers.forEach((item, i) => {
+     let containerDimensions = item.getBoundingClientRect();
+     let containerWidth = containerDimensions.width;
+ 
+     nxtBtn[i].addEventListener('click', () => {
+         item.scrollLeft += containerWidth;
+     })
+ 
+     preBtn[i].addEventListener('click', () => {
+         item.scrollLeft -= containerWidth;
+     })
+ })
 
  
   
