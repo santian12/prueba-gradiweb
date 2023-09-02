@@ -1,0 +1,115 @@
+/* Estilos del carrusel Swiper */
+.swiper-container {
+    width: 100%;
+    padding: 20px;
+  }
+  
+  .swiper-slide {
+    width: 300px;
+    box-shadow: 2px 2px 30px #444950;
+    border-radius: 10px;
+    overflow: hidden;
+    display: inline-block;
+    vertical-align: top;
+    margin-right: 20px;
+  }
+  
+  .slide-img {
+    height: 450px;
+    position: relative;
+  }
+  
+  .slide-img img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    box-sizing: border-box;
+  }
+  
+  .overlay {
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(239, 165, 147, 0.3); /* Cambia el color de fondo de la superposición según tus preferencias */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    opacity: 0;
+    transition: opacity 0.3s ease;
+  }
+  
+  .slide-img:hover .overlay {
+    opacity: 1;
+  }
+  
+  .buy-btn {
+    padding: 10px 20px;
+    background-color: #EFA693;
+    color: #FFDCD3;
+    font-weight: 700;
+    border-radius: 20px;
+    text-decoration: none;
+    transition: background-color 0.3s ease, color 0.3s ease;
+  }
+  
+  .buy-btn:hover {
+    background-color: #FFF;
+    color: #EFA693;
+  }
+  
+  .detials-box {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+    box-sizing: border-box;
+  }
+  
+  .type a {
+    color: #444950;
+    margin: 5px 0;
+    font-weight: 700;
+    letter-spacing: 0.5px;
+    padding-right: 8px;
+  }
+  
+  .type span {
+    color: #444950;
+  }
+  
+  .price {
+    color: #444950;
+    font-weight: 600;
+    font-size: 1.7rem;
+    letter-spacing: 0.5px;
+  }
+  
+  /* Estilos de los botones de navegación (opcional) */
+  .swiper-button-prev,
+  .swiper-button-next {
+    width: 30px;
+    height: 30px;
+    background-color: #EFA693;
+    color: #FFDCD3;
+    font-size: 18px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    margin: 0 10px;
+    opacity: 0.8;
+    transition: background-color 0.3s ease, color 0.3s ease, opacity 0.3s ease;
+  }
+  
+  .swiper-button-prev:hover,
+  .swiper-button-next:hover {
+    background-color: #FFF;
+    color: #EFA693;
+    opacity: 1;
+  }
+  
