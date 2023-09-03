@@ -434,7 +434,7 @@ product-card:hover .card-btn {
 }
 
 .product-container {
-  padding: 0 10vw;
+  padding: 0px 0vw 0vw 0vw;
   display: flex;
   overflow-x: auto;
   scroll-behavior: smooth;
@@ -521,9 +521,10 @@ max-width: 83px;
 
 height: 39px;
 }
+.section-1{max-width: 80%;}
 .section-2 {
   padding-left: 9%;
-  max-width: 73%;
+  max-width: 68%;
 }
 .container > div {
   width: 100%;
@@ -546,11 +547,18 @@ height: 39px;
   margin-top: 0px;
   margin-bottom: 75px;
 }
+.product {
+  position: relative;
+  overflow: hidden;
+  padding-right: 0px;
+  padding-left: 0%;
+}
 .product-card {
   flex: 0 0 auto;
-  width: 303px;
-  height: 500px;
-  margin-right: 40px;
+  width: 329px;
+  height: 490px;
+  margin-right: 6%;
+  margin-left: 8%;
 }
 .email {
   width: 292px;
@@ -574,12 +582,16 @@ footer {
     vertical-align: middle
 }
 .pre-btn{
-left: 6%;
-top: -48px;
+
+left: 6%;
+
+top: -48px;
 }
 .nxt-btn{
-  top: -98px;
-  left: 109px;
+  
+top: -98px;
+  
+left: 109px;
 }
 .imgFooter1{
   width: 37.58px;

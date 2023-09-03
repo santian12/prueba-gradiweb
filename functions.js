@@ -43,6 +43,21 @@ function getStarRating(average) {
   }
 }
 
+function getCurrencySymbol(currencyCode) {
+  switch (currencyCode) {
+    case 'EUR':
+      return '€';
+    case 'USD':
+      return '$';
+    case 'COP':
+      return '$';
+    // Agrega más casos según las monedas que necesites manejar
+    default:
+      return currencyCode; // Si no se encuentra una coincidencia, muestra el código de moneda tal cual
+  }
+}
+
+
 // Renderiza el promedio y el número de estrellas
 const starRating = getStarRating(averageTag);
 //fin del sistema
@@ -64,7 +79,7 @@ if (onsale > 0) {
               <div class="product-info">
                   <h2 class="product-brand">${product.title}</h2>
                   <span class="stars">${starRating}</span><span class="tags">(${averageTag})</span>
-                  <span class="price">${product.prices.max.amount} ${product.prices.max.currencyCode}</span><span class="actual-price"></span>
+                  <span class="price">${getCurrencySymbol(product.prices.max.currencyCode)} ${product.prices.max.amount} </span><span class="actual-price"></span>
 
               </div>
           </div>
