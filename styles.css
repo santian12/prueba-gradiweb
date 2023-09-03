@@ -521,12 +521,8 @@ flex-shrink: 0;
   top: 110px;
 }
 .txt1{
-  
-width: 300px;
-  
-font-size: 34px;
-  
-/* width: 100%; */
+  width: 300px;
+  font-size: 200%;
 }
 .rectangle{
 
