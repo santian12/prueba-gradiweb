@@ -6,7 +6,6 @@ body{
 .header{
   padding: 8px;
   background-size: cover; /* Usar cover para cubrir todo el ancho y alto del elemento */
-  width: 100%;
   height: auto; /* Ajustar la altura automáticamente */
   flex-shrink: 0;
   background-color: var(--primary-palette-brand-2-pale, #FFDCD3);
@@ -502,14 +501,20 @@ flex-shrink: 0;
 }
 
 @media (max-width: 767px) {
+  body{
+    overflow-x: hiddens;
+  }
   .container {
     display: block;
     flex-direction: row;
 }
 .txt1{
-  width: 300px;
-  font-size: 34px;
-  /* width: 100%; */
+  
+width: 300px;
+  
+font-size: 34px;
+  
+/* width: 100%; */
 }
 .rectangle{
 
@@ -627,3 +632,4 @@ height: 36.932px;
 }
 
 }
+
