@@ -119,6 +119,24 @@ if (onsale > 0) {
      })
  })
 
- 
-  
+ //validacion correo electronico
+ document.addEventListener("DOMContentLoaded", function () {
+  document.getElementById("emailForm").addEventListener("submit", function (event) {
+    event.preventDefault(); // Evitar el envío del formulario por defecto
+
+    const emailInput = document.getElementById("email");
+    const email = emailInput.value.trim(); // Obtener el valor del campo de entrada
+
+    // Expresión regular para validar un correo electrónico
+    const regex = /^[A-Za-z0-9._%-]+@[A-Za-z0-9.-]+\.[A-Za-z]{2,4}$/;
+
+    if (regex.test(email)) {
+        // El correo electrónico es válido
+        alert("Muchas gracias pronto nos pondremos en contacto contigo");
+    } else {
+        // El correo electrónico no es válido
+        alert("Correo electrónico no válido");
+    }
+  });
+});
   
