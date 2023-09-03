@@ -1,5 +1,6 @@
 body{
   margin: 0;
+  overflow-x: hidden;
 }
 
 .header{
@@ -29,21 +30,16 @@ body{
   }
   
   .container > div {
-    width: 17%;
+    width: 46%;
   }
   .section-1{
-    padding-left: 20%;
-    height: 131px;
+    padding-left: 11%;
+    height: 103px;
     top: 63px;
     left: 216px;
-
   }
   .section-2{
     padding-top: 6%;
-    padding-left: 20%;
-    height: 131px;
-    top: 63px;
-    left: 216px;
   }
   .txt1{
 
@@ -56,12 +52,17 @@ line-height: 140%;
   }
   .rectangle{
     
-    margin-right: 10%;
-  border-radius: 100px;
-    width: 70px;
-    height: 24px;
-    background-color: var(--primary-palette-brand-2-pale, #FFDCD3);;
-    display: inline-block;
+margin-left: 1%;
+    
+border-radius: 100px;
+    
+height: 37px;
+    
+background-color: var(--primary-palette-brand-2-pale, #FFDCD3);
+    
+display: inline-block;
+    
+max-width: 112px;
   }
   .rectangleBlue {
     margin-right: 10%;
@@ -100,7 +101,7 @@ line-height: 140%;
   z-index: auto;
 }
 .contenedosBtn{
-  margin-top: 75px;
+  margin-top: -72px;
   margin-bottom: 75px;
   display: flex;
   justify-content: center;
@@ -315,6 +316,9 @@ line-height: 132%; /* 23.76px */
   z-index: 0;
 }
 
+
+.nxt-btn img {padding-left: 29%;}
+
 .pre-btn {
   cursor: pointer;
   justify-content: center;
@@ -327,9 +331,8 @@ line-height: 132%; /* 23.76px */
   padding: 10px 32px;
   border-radius: 100px;
   opacity: 0.9;
-  background: blue;
-  top: 16%;
-  left: 57%;
+  top: 157px;
+  right: 734px;
   height: 50px;
   padding-right: 0px;
   padding-bottom: 0px;
@@ -353,10 +356,8 @@ line-height: 132%; /* 23.76px */
   border-radius: 100px;
   border: white;
   opacity: 0.9;
-  background: red;
-  top: 16%;
-  left: 62%;
-  transform: rotate(90deg);
+  top: 157px;
+  right: 617px;
   padding-right: 0px;
   padding-bottom: 0px;
   padding-left: 0px;
@@ -367,7 +368,10 @@ line-height: 132%; /* 23.76px */
 
 .pre-btn img,
 .nxt-btn img {
+  padding-top: 21%;
+  width: 53%;
   opacity: 0.2;
+  padding-right: 22%;
 }
 
 .pre-btn:hover img,
@@ -421,7 +425,6 @@ line-height: 132%; /* 23.76px */
   line-height: 140%; /* 19.6px */
 }
 
-/*preuba slide*/
 /* PRODUCTS */
 .product {
   position: relative;
@@ -446,19 +449,28 @@ line-height: 132%; /* 23.76px */
 
 @media (max-width: 767px) {
   .container {
-    margin-bottom: -12%;
+    margin-bottom: 19%;
     display: block;
     flex-direction: row;
 }
+.txt1{
+  
+width: 300px;
+  
+font-size: 34px;
+  
+/* width: 100%; */
+}
+.rectangle{
+max-width: 83px;
+height: 39px;
+}
 .section-2 {
-  padding-top: 60%;
-  padding-left: 20%;
-  height: 131px;
-  top: 63px;
-  left: 216px;
+  padding-left: 9%;
+  max-width: 73%;
 }
 .container > div {
-  width: 38%;
+  width: 100%;
 }
 .form{
   margin-top: 28px;
@@ -504,5 +516,13 @@ footer {
 .email::placeholder{
   text-align: center; 
     vertical-align: middle
+}
+.pre-btn{
+left: 14%;
+top: 24%;
+}
+.nxt-btn{
+  top: 24%;
+  left: 37%;
 }
 }
