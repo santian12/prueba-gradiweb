@@ -61,13 +61,14 @@ function getCurrencySymbol(currencyCode) {
 // Renderiza el promedio y el número de estrellas
 const starRating = getStarRating(averageTag);
 //fin del sistema
-
+//redereizado etiqueta de descyuento si el producto tiene un descuento
 const sale = ( `${product.prices.max.amount}` - `${product.prices.min.amount}`) * 100;
 const onsale= (sale/`${product.prices.max.amount}`)*100;
 let discountTag = '';
 if (onsale > 0) {
   discountTag = `<span class="discount-tag">${onsale}% off</span>`;
 }
+//fin regla
 
               return `
               <div class="product-card">
