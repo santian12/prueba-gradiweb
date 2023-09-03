@@ -503,17 +503,13 @@ flex-shrink: 0;
 
 @media (max-width: 767px) {
   .container {
-    margin-bottom: 0%;
     display: block;
     flex-direction: row;
 }
 .txt1{
-  
-width: 300px;
-  
-font-size: 34px;
-  
-/* width: 100%; */
+  width: 300px;
+  font-size: 34px;
+  /* width: 100%; */
 }
 .rectangle{
 
@@ -523,6 +519,7 @@ height: 39px;
 }
 .section-1{max-width: 80%;}
 .section-2 {
+  padding-top: 6%;
   padding-left: 9%;
   max-width: 68%;
 }
