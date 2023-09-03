@@ -59,7 +59,7 @@ if (onsale > 0) {
               <div class="product-image">
                 ${discountTag}
                   <img src="${product.featuredImage.url}" class="product-thumb" alt="">
-                  <button class="card-btn">add to wishlist</button>
+                  <button class="card-btn">add to cart</button>
               </div>
               <div class="product-info">
                   <h2 class="product-brand">${product.title}</h2>
