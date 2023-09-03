@@ -161,7 +161,8 @@ line-height: 140%; /* 61.6px */
   display: flex;
 }
 .email{
-  padding-left: 36px;
+  padding-left: 14px;
+  padding-right: 43px;
   width: 360px;
   height: 48px;
   flex-shrink: 0;
@@ -639,4 +640,8 @@ height: 36.932px;
 }
 
 }
-
+@media (min-width: 768px) and (max-width: 991px) {
+  .imgFooter6{
+  display: none;
+}
+}
