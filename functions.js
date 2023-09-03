@@ -25,6 +25,7 @@ const numericTags = [];
 
 
 const averageTag = numericTags.length > 0 ? numericTags.reduce((acc, tag) => acc + tag, 0) / numericTags.length : 0;
+
 console.log(averageTag)
 function getStarRating(average) {
   switch (true) {
