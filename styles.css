@@ -648,4 +648,13 @@ height: 36.932px;
   margin-bottom: 10%;
   
 }
+
+}
+@media screen and (min-width: 991px) {
+  .imgFooter6{
+    display: none;
+  }
+  body {
+    font-size: 18px;
+  }
 }
