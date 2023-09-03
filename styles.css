@@ -148,13 +148,12 @@ line-height: 140%; /* 61.6px */
 }
 .footer p{
   color: var(--Gray---Paragraph, #939393);
-text-align: center;
-font-family: Filson Pro;
-font-size: 15px;
-font-style: normal;
-font-weight: 350;
-line-height: 180%; /* 27px */
-
+  text-align: center;
+  font-family: system-ui;
+  font-size: 15px;
+  font-style: normal;
+  font-weight: 350;
+  line-height: 180%; /* 27px */
 }
 
 .messsage{
@@ -162,12 +161,13 @@ line-height: 180%; /* 27px */
   display: flex;
 }
 .email{
+  padding-left: 36px;
   width: 360px;
-height: 48px;
-flex-shrink: 0;
-border-radius: 100px;
-border: 1px solid var(--primary-palette-brand-2, #EFA693);
-background: var(--White, #FFF);
+  height: 48px;
+  flex-shrink: 0;
+  border-radius: 100px;
+  border: 1px solid var(--primary-palette-brand-2, #EFA693);
+  background: var(--White, #FFF);
 }
 .email::placeholder{
   text-align: left;
@@ -254,7 +254,7 @@ background: var(--White, #FFF);
   border-radius: 35px;
   transition: 0.5s;
   cursor: pointer;
-  color: #ff7d7d;
+  color: #F1AF9E;
   background-color: white;
 }
 product-card:hover .card-btn {
@@ -262,7 +262,7 @@ product-card:hover .card-btn {
 }
 
 .card-btn:hover {
-  background: #ff7d7d;
+  background: #F1AF9E;
   color: white;
 }
 
@@ -424,7 +424,14 @@ product-card:hover .card-btn {
   font-weight: 400;
   line-height: 140%; /* 19.6px */
 }
-
+.Btn:hover { 
+background-color: white;
+color: #f1af9e;
+}
+.btnfooter:hover{
+  background-color: white;
+color: #f1af9e;
+}
 /* PRODUCTS */
 .product {
   position: relative;
