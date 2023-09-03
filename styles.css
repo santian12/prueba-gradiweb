@@ -503,7 +503,7 @@ flex-shrink: 0;
 
 @media (max-width: 767px) {
   .container {
-    margin-bottom: 19%;
+    margin-bottom: 0%;
     display: block;
     flex-direction: row;
 }
@@ -529,7 +529,7 @@ height: 39px;
   width: 100%;
 }
 .form{
-  margin-top: 28px;
+  margin-top: 41px;
   /* margin-bottom: 75px; */
   display: grid;
   /* justify-content: center; */
@@ -561,11 +561,11 @@ height: 39px;
   background: var(--White, #FFF);
 }
 .footer {
-  padding-top: 21%;
+  padding-top: 11%;
 }
 footer {
   align-items: center;
-  height: 569px;
+  height: 634px;
   background-image: url(https://i.ibb.co/KGjzLhc/Union.png);
   background-size: 211% 100%;
 }
@@ -574,16 +574,12 @@ footer {
     vertical-align: middle
 }
 .pre-btn{
-
-left: 14%;
-
-top: 24%;
+left: 6%;
+top: -48px;
 }
 .nxt-btn{
-  
-top: 24%;
-  
-left: 37%;
+  top: -98px;
+  left: 109px;
 }
 .imgFooter1{
   width: 37.58px;
@@ -591,28 +587,34 @@ height: 36.932px;
 
 }
 .imgFooter2{
-  top: 72%;
-  left: 77%;
+  width: 30px;
+  top: 301px;
+  left: 321px;
+  height: 31px;
+  position: relative;
 }
 .imgFooter3{
-  top: 122px;
+  top: 93px;
   left: 126px;
 }
 .imgFooter4{
+  left: -54px;
+  height: 46px;
   filter: blur(5px);
-  top: 24em;
- 
+  top: 19em;
+  width: 30px;
 }
 .imgFooter5{
-  height: 30px;
+  height: 33px;
   width: 30px;
-  left: -130px;
-  bottom: -63px;
+  left: -100px;
+  bottom: -27em;
 }
 .imgFooter6{
+  display: none;
+  position: initial;
   top: 216px;
   left: 1547px;
-  
 }
 
 }
