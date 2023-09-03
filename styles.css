@@ -4,6 +4,7 @@ body{
 }
 
 .header{
+  max-width: 100%;
   padding: 8px;
   background-size: cover; /* Usar cover para cubrir todo el ancho y alto del elemento */
   height: auto; /* Ajustar la altura automáticamente */
@@ -64,14 +65,14 @@ display: inline-block;
 max-width: 112px;
   }
   .rectangleBlue {
-    left: 10%;
+    left: 9%;
     margin-right: 20%;
     border-radius: 99px;
     width: 70px;
     height: 24px;
     background-color: #41c1f957;
     position: absolute;
-    top: 13%;
+    top: 11%;
     z-index: -1;
 }
   .subSeccion{ 
@@ -517,12 +518,9 @@ flex-shrink: 0;
     flex-direction: row;
 }
 .txt1{
-  
-width: 300px;
-  
-font-size: 34px;
-  
-/* width: 100%; */
+  width: 100%;
+  font-size: 29px;
+  /* width: 100%; */
 }
 .rectangle{
 
@@ -571,12 +569,14 @@ height: 39px;
   margin-left: 8%;
 }
 .email {
+  padding-left: 0;
   width: 292px;
   height: 47px;
   flex-shrink: 0;
   border-radius: 100px;
   border: 1px solid var(--primary-palette-brand-2, #EFA693);
   background: var(--White, #FFF);
+  padding-right: 0;
 }
 .footer {
   padding-top: 11%;
@@ -611,7 +611,7 @@ height: 36.932px;
 .imgFooter2{
   width: 30px;
   top: 301px;
-  left: 321px;
+  left: 279px;
   height: 31px;
   position: relative;
 }
