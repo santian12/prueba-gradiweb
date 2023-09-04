@@ -6,8 +6,5 @@
   "main": "index.js",
   "scripts": {
     "start": "node index.js"
-  },
-  "dependencies": {
-    // Aquí van las dependencias de tu proyecto
   }
 }
